@@ -1,8 +1,30 @@
-# Getting Started
+# Websockets DEMO
 Web Sockets DEMO with SpringBoot
 
-### Guides
-Build and Start the project
+You can test the WebSocket server using a WebSocket client like `wscat` or a simple HTML client.
+
+## Using `wscat`
+
+### Install `wscat`
+
+Install `wscat` (a WebSocket client for command-line) if you haven't already:
+
+```sh
+npm install -g wscat
+```
+### Connect to the WebSocket Server
+
+```sh
+wscat -c ws://localhost:8080/websocket
+```
+### Send a message and Observe response from server
+
+```sh
+> Hello Server
+< Server received: Hello Server
+```
+
+## Using HTML client with socketjs library
 
 Admin to push the score
 http://localhost:8080/adminpage.html
@@ -12,7 +34,7 @@ http://localhost:8080/livescore.html
 
 ### Technology
 Server Side: SpringBoot <br>
-Client Side: JQuery
+Client Side: JQuery, socketjs & curl
 
 
 ### Reference Documentation
