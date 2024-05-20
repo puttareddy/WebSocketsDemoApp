@@ -1,6 +1,15 @@
 # Websockets DEMO
 Web Sockets DEMO with SpringBoot
 
+## Step-by-Step Instructions
+
+Build and start the Docker containers:
+Run the following command to build and start the Docker containers using Docker Compose:
+
+```sh
+docker-compose up --build
+```
+
 You can test the WebSocket server using a WebSocket client like `wscat` or a simple HTML client.
 
 ## Using `wscat`
